@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" name="frm1">
+        <fieldset>
+            <legend>Employee Information</legend>
+            <label for="txtName">Name:</label> <br>
+            
+                   <input type="text" id="txtName" required size="40" value="Thanh Van" maxlength="20" placeholder="Enter your first name">  <br>
+            <label for="txtEmail">Email:</label><br>
+            <input type="email" required="required" id="txtEmail"><br>
+            <label for="txtColor">Favorite color: </label><br>
+            <input type="color" id="txtColor" value="#0006ff"><br>
+            <label for="txtDOB">Date of birth: </label><br>
+            <input type="date"  id="txtDOB"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Job infor</legend>
+            <label for="taMessage">Message: </label><br>
+            <textarea id="taMessage" cols="40" rows="5"></textarea><br>
+            <select id="slc" >
+                <option value="google">Google</option>
+                <option value="facebook" selected>Facebook</option>
+                <option value="tweet">Tweet</option>
+            </select> <br>
+            Hear from: <br>
+            <input type="text" id="txt1" list="mylist">
+            <datalist id="mylist" >
+                <option value="Google"></option>
+                <option value="Facebook"></option>
+                <option value="Tweet"></option>
+            </datalist> <br>
+        </fieldset>
+
+        <label >Skills: </label><br>
+        <input type="checkbox" id="java" checked> <label for="java">Java</label> <br>
+        <input type="checkbox" id="csh"> <label for="csh">C#</label>  <br>
+        <input type="checkbox" id="python" checked> <label for="python">Python</label> <br>
+
+        <label for="">Terms: </label> <br>
+        <input type="radio" name="terms" id="txtAgree"> <label for="txtAgree">Agree</label>
+        <input type="radio" name="terms" id="txtDisagree"> <label for="txtDisagree">Disagree</label><br>
+
+       <!-- <input type="submit" value="Submit"> -->
+       <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+       <button type="button" id="btnClick">Button</button>
+    </form>
+</body>
+</html>
